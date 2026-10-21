@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>QuizMaster</h1>
+        <p class="subtitle">Test Your Knowledge!</p>
+
+        <div id="quiz-box">
+            <div class="quiz-info">
+                <span id="question-number">Question 1 of 5</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+            <h2 id="question">Loading question...</h2>
+
+            <div id="answer-buttons"></div>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <button id="next-btn" disabled>Next Question →</button>
+        </div>
+
+        <div id="result-box" hidden>
+            <h2>Quiz Completed!</h2>
+            <p id="final-score"></p>
+            <p id="result-message"></p>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+</body>
+</html>
